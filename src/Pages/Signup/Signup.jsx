@@ -1,12 +1,13 @@
 import { useContext, useState } from 'react';
-import img from '/logo.png'
-import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import img from '/logo.png'
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
     const [messageError, setMessageError] = useState('');
+    const navigate = useNavigate();
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -21,9 +22,10 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser)
-                updateUserProfile(name, photo)
-                form.reset()
+                console.log(loggedUser);
+                updateUserProfile(name, photo);
+                navigate('/');
+                form.reset();
             })
             .catch(error => {
                 console.log(error)

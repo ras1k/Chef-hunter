@@ -33,8 +33,8 @@ const AuthProvider = ({ children }) => {
     }
 
     const logOut = () => {
-        setLoading(true)
-        return signOut(auth)
+        setLoading(true);
+        return signOut(auth);
     }
 
     useEffect(() => {
@@ -52,7 +52,7 @@ const AuthProvider = ({ children }) => {
         createUser,
         signIn,
         updateUserProfile,
-        logOut
+        logOut,
     }
     return (
         <AuthContext.Provider value={authInfo}>

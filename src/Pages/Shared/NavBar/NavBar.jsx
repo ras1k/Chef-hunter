@@ -1,8 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '/logo.png';
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
-    const user = 1;
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error))
+    }
+
     const navItems = <>
         <li>
             <NavLink to={"/"}>Home</NavLink>
@@ -26,7 +34,7 @@ const NavBar = () => {
                             {navItems}
                         </ul>
                     </div>
-                        <Link to="/" ><img src={logo} className='w-1/6 rounded-lg' alt="" /></Link>
+                    <Link to="/" ><img src={logo} className='w-1/6 rounded-lg' alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal text-slate-200 px-1">
@@ -41,7 +49,7 @@ const NavBar = () => {
                         <img className="w-12 h-12 mx-3 rounded-full" src={user.photoURL} alt="user profile" />
                     )}
                     {user?.email ? <>
-                        <button className="btn btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral">Logout</button>
+                        <button className="btn btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral" onClick={handleLogOut}>Logout</button>
                     </> :
                         <Link to='/login'><button className="btn btn-sm md:btn-md btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral">Login</button></Link>
                     }
