@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-yellow-950 text-neutral-content">
                 <div>
-                   <img src={logo} className='w-1/6 rounded-lg' alt="" />
+                    <img src={logo} className='w-1/6 rounded-lg' alt="" />
                     <p>Chef Advisor Ltd.<br />Providing best chef since 1992</p>
                 </div>
                 <div>
