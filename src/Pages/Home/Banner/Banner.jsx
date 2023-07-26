@@ -5,11 +5,18 @@ import "./styleFile.css";
 
 const content = [
     {
-        title: "Garden Chef",
+        title: "Head Chef",
         description:
-            "GardenChef cultivates and prepares fresh, sustainable produce, blending creativity with nature's bounty to create delightful and nutritious dishes.",
-        button: "Read More",
-        image: "https://i.ibb.co/vXJ1vh9/priscilla-du-preez-JCZ2p-E-Szpw-unsplash.jpg"
+            "Head Chef is the culinary leader in a restaurant or kitchen, responsible for menu creation, supervising staff, and ensuring food quality, innovation, and consistency",
+        button: "Learn now",
+        image: "https://i.ibb.co/pP3Yj02/fabrizio-magoni-boa-Dpm-C-Xo-unsplash.jpg"
+    },
+    {
+        title: "Noodle Chef",
+        description:
+            "Noodle Chef expertly crafts diverse and flavorful noodle dishes, infusing cultural influences and culinary mastery, delighting taste buds with every bowl of comforting and satisfying goodness.",
+        button: 'Continue',
+        image: "https://i.ibb.co/DQTPMdq/jorge-zapata-4n-Xkh-LCrk-Lo-unsplash.jpg"
     },
     {
         title: "Salad Chef",
@@ -19,12 +26,12 @@ const content = [
         image: "https://i.ibb.co/tBxkYXv/ca-creative-8-Tlng54n8-Y-unsplash.jpg"
     },
     {
-        title: "Head Chef",
+        title: "Garden Chef",
         description:
-            "Head Chef oversees kitchen operations, leads culinary team, and ensures high-quality food preparation for a delightful dining experience.",
-        button: "Buy now",
-        image: "https://i.ibb.co/pP3Yj02/fabrizio-magoni-boa-Dpm-C-Xo-unsplash.jpg"
-    }
+            "GardenChef cultivates and prepares fresh, sustainable produce, blending creativity with nature's bounty to create delightful and nutritious dishes.",
+        button: "Read More",
+        image: "https://i.ibb.co/vXJ1vh9/priscilla-du-preez-JCZ2p-E-Szpw-unsplash.jpg"
+    },
 ];
 
 const Banner = () => {
