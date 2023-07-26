@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import img from '/logo.png'
 import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const SignUp = () => {
 
@@ -75,7 +76,7 @@ const SignUp = () => {
                                 <p className='text-[red] mt-6 text-center'>{messageError}</p>
                                 <div className="form-control mt-6">
                                     <input className="btn btn-sm md:btn-md btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral" type="submit" value="Sign Up" /> <br />
-                                    
+                                    <SocialLogin />
                                     <br />
                                     <p className='my-4 text-center text-white'>Already have an account? <Link to='/login' className='no-underline text-orange-600 font-bold'>Login</Link></p>
                                 </div>
