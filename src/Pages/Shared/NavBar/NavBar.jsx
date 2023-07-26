@@ -48,7 +48,7 @@ const NavBar = () => {
                     {user?.photoURL && (
                         <img className="w-12 h-12 mx-3 rounded-full" src={user.photoURL} alt="user profile" />
                     )}
-                    {user?.email ? <>
+                    {user?.displayName ? <>
                         <button className="btn btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral" onClick={handleLogOut}>Logout</button>
                     </> :
                         <Link to='/login'><button className="btn btn-sm md:btn-md btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral">Login</button></Link>

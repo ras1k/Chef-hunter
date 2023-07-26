@@ -1,6 +1,5 @@
 import img from '/logo.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
@@ -23,15 +22,6 @@ const Login = () => {
             .then((result) => {
                 const user = result.user;
                 console.log(user);
-                Swal.fire({
-                    title: 'User Login successful',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                });
                 navigate(from, { replace: true })
             })
             .catch((error) => {
@@ -56,13 +46,13 @@ const Login = () => {
                                     <label className="label">
                                         <span className="label-text text-white">Email</span>
                                     </label>
-                                    <input type="text" name='email' placeholder="Email" className="input input-bordered text-black" />
+                                    <input type="text" name='email' required placeholder="Email" className="input input-bordered text-black" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-white">Password</span>
                                     </label>
-                                    <input type="password" name='password' placeholder="Password" className="input input-bordered text-black" />
+                                    <input type="password" name='password' required placeholder="Password" className="input input-bordered text-black" />
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover text-white mt-2">Forgot password?</a>
                                     </label>

@@ -7,7 +7,7 @@ const content = [
     {
         title: "Head Chef",
         description:
-            "Head Chef is the culinary leader in a restaurant or kitchen, responsible for menu creation, supervising staff, and ensuring food quality, innovation, and consistency",
+        "Head Chef is the culinary leader in a restaurant or kitchen, responsible for menu creation, supervising staff, and ensuring food quality, innovation, and consistency",
         button: "Learn now",
         image: "https://i.ibb.co/pP3Yj02/fabrizio-magoni-boa-Dpm-C-Xo-unsplash.jpg"
     },
@@ -37,7 +37,7 @@ const content = [
 const Banner = () => {
     return (
         <div className="mt-2 mb-4">
-            <Slider className="slider-wrapper">
+            <Slider className="slider-wrapper" autoplay={2000}>
                 {content.map((item, index) => (
                     <div
                         key={index}

@@ -42,7 +42,7 @@ const SignUp = () => {
                     <div className="mr-12 w-1/2">
                         <img src={img} alt="" />
                     </div>
-                    <div className="card flex-shrink-0 bg-yellow-950 w-full max-w-sm shadow-2xl">
+                    <div className="card flex-shrink-0 bg-yellow-950 w-full max-w-md shadow-2xl">
                         <div className="card-body">
                             <h1 className="text-5xl font-bold text-center text-white">Signup</h1>
                             <form onSubmit={handleSignUp}>
@@ -50,25 +50,25 @@ const SignUp = () => {
                                     <label className="label">
                                         <span className="label-text text-white">Name</span>
                                     </label>
-                                    <input type="text" name='name' placeholder="Name" className="input input-bordered" />
+                                    <input type="text" name='name' required placeholder="Name" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-white">Email</span>
                                     </label>
-                                    <input type="text" name='email' placeholder="Email" className="input input-bordered" />
+                                    <input type="text" name='email' required placeholder="Email" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-white">Photo URl</span>
                                     </label>
-                                    <input type="text" name='photo' placeholder="Photo URL" className="input input-bordered" />
+                                    <input type="text" name='photo' required placeholder="Photo URL" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text text-white">Password</span>
                                     </label>
-                                    <input type="password" name='password' placeholder="Password" className="input input-bordered" />
+                                    <input type="password" name='password' required placeholder="Password" className="input input-bordered" />
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                                     </label>

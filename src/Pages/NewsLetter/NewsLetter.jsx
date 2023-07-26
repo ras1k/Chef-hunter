@@ -22,7 +22,7 @@ const NewsLetter = () => {
                                 <input type="text" placeholder="email" className="input input-bordered" />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-sm md:btn-md bg-yellow-950 text-white btn-outline">Subscribe</button>
+                                <button className="btn btn-sm md:btn-md btn-outline bg-yellow-950 text-white">Subscribe</button>
                             </div>
                         </div>
                     </div>
