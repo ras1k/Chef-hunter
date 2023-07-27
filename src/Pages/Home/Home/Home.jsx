@@ -1,6 +1,7 @@
-import Chef from "../../ChefSection/CHef";
+import Chef from "../ChefSection/CHef";
 import NewsLetter from "../../NewsLetter/NewsLetter";
 import Banner from "../Banner/Banner";
+import Location from "../Location/Location";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Banner />
             <Chef />
+            <Location />
             <NewsLetter />
         </div>
     );

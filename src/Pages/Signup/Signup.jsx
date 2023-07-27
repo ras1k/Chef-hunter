@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import img from '/logo.png'
 import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const SignUp = () => {
@@ -25,6 +26,15 @@ const SignUp = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 updateUserProfile(name, photo);
+                Swal.fire({
+                    title: 'User Sign Up successful',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                });
                 navigate('/');
                 form.reset();
             })

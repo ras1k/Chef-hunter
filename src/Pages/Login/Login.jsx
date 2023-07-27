@@ -1,7 +1,8 @@
-import img from '/logo.png'
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import img from '/logo.png'
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -22,6 +23,15 @@ const Login = () => {
             .then((result) => {
                 const user = result.user;
                 console.log(user);
+                Swal.fire({
+                    title: 'User Login successful',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                });
                 navigate(from, { replace: true })
             })
             .catch((error) => {

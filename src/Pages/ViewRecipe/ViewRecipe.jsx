@@ -1,5 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import Recipe from './Recipe';
+import LazyLoad from 'react-lazy-load';
 
 const ViewRecipe = () => {
 
@@ -9,7 +10,9 @@ const ViewRecipe = () => {
     return (
         <div className="hero min-h-screen bg-base-200 rounded-lg">
             <div className="hero-content flex-col lg:flex-row">
-                <img src={chef_picture} className="max-w-sm rounded-lg shadow-2xl" />
+                <LazyLoad height={762}>
+                    <img src={chef_picture} className="max-w-sm rounded-lg shadow-2xl" />
+                </LazyLoad>
                 <div className=''>
                     <h1 className="text-5xl font-bold">{chef_name}</h1>
                     <h1 className='text-[20px] mt-5 text-yellow-950  font-[500]'>Numbers of recipes: {num_recipes}</h1>
