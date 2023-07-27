@@ -8,7 +8,7 @@ const Recipe = ({ recipe }) => {
             <div>
                 <h1 className='text-yellow-950 text-[16px] font-[500]'>Ingredients</h1>
                 {
-                    ingredients.map(ingredient => <li> {ingredient}</li>)
+                    ingredients.map(ingredient => <li key={ingredient.id}> {ingredient}</li>)
                 }
                 <p> <span className='text-yellow-950  font-[500]'>Cooking Method: </span>{cooking_method}</p>
             </div>
