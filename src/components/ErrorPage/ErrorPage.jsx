@@ -1,5 +1,5 @@
 import { Link, useRouteError } from "react-router-dom";
-import img from '/error.gif';
+import img from '/error-error404.gif';
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -15,6 +15,7 @@ export default function ErrorPage() {
         <div className="">
           <div className="text-center">
             <h1 className="mt-6 mb-4 text-2xl fond-semibold leading-7 text-red-600">
+              <h3 className="text-3xl font-bold">404</h3>
               {error.data}
             </h1>
             <div className="mt-4 flex items-center justify-center gap-x-3">
