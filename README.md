@@ -6,7 +6,8 @@ Live Link: [https://chef-hunter-66aa0.web.app/](https://chef-hunter-66aa0.web.ap
 * Single Page Application
 * Login System
 * Authentication
-* PrivateRoute
+* Private Route
+* PDF Download
   
 ## Technologies Used: 
 * React/Vite
@@ -17,5 +18,6 @@ Live Link: [https://chef-hunter-66aa0.web.app/](https://chef-hunter-66aa0.web.ap
 * React-icons
 * React-lazy-load
 * React-router-dom
+* React-to-pdf
 * Sweetalert2
 * Swiper
