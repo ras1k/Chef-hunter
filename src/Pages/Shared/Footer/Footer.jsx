@@ -20,6 +20,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            <div className='text-center bg-yellow-950 text-white p-4'>
+                <p>© Copyright 2023 Chef Advisor Ltd. All rights reserved</p>
+            </div>
         </div>
     );
 };

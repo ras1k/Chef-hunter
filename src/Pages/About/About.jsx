@@ -1,3 +1,4 @@
+import Chef from "../Home/ChefSection/CHef";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import logo from '/logo.png';
 
@@ -9,7 +10,7 @@ const About = () => {
                     <div className="container mx-auto px-4">
                         <h1 className="text-4xl font-bold text-center mb-8">About Chef Advisor</h1>
                         <p className="text-center text-gray-600">
-                        Chef Hunter is the premier platform for uncovering exceptional chefs globally. Our seamless platform connects talented culinary artists with top restaurants and food establishments, forging a path towards unparalleled excellence. Discover a world of culinary brilliance and elevate your dining experience with our carefully curated selection of top-tier chefs.
+                            Chef Hunter is the premier platform for uncovering exceptional chefs globally. Our seamless platform connects talented culinary artists with top restaurants and food establishments, forging a path towards unparalleled excellence. Discover a world of culinary brilliance and elevate your dining experience with our carefully curated selection of top-tier chefs.
                         </p>
                         <div className="mt-12 flex justify-center">
                             <img src={logo} alt="" className="w-1/2 rounded-lg" />
@@ -38,7 +39,7 @@ const About = () => {
                         </div>
                         <div className="mt-12">
                             <h2 className="text-2xl font-bold mb-4">Meet the Team</h2>
-                            {/* Add team member profiles here */}
+                            <Chef />
                         </div>
                     </div>
                 </div>

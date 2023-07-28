@@ -1,7 +1,10 @@
 
 const Blog = () => {
     return (
-        <div className="p-8">
+        <div className="p-4">
+            <div className='text-center'>
+                <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10 mb-10'>Blog Page</h2>
+            </div>
             <div className="collapse collapse-arrow bg-base-200 mb-4">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div className="collapse-title text-xl font-bold">

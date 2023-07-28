@@ -27,7 +27,7 @@ const SignUp = () => {
                 console.log(loggedUser);
                 updateUserProfile(name, photo);
                 Swal.fire({
-                    title: 'User Sign Up successful',
+                    title: 'User Sign Up successful, Login Now',
                     showClass: {
                         popup: 'animate__animated animate__fadeInDown'
                     },
@@ -35,7 +35,7 @@ const SignUp = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
-                navigate('/');
+                navigate('/login');
                 form.reset();
             })
             .catch(error => {

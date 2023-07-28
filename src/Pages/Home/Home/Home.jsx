@@ -1,7 +1,7 @@
 import Chef from "../ChefSection/CHef";
 import NewsLetter from "../../NewsLetter/NewsLetter";
 import Banner from "../Banner/Banner";
-import RecipeBar from "../RecipeBar/RecipeBar";
+import RecipeGallery from "../RecipeGallery/RecipeGallery";
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Banner />
             <Chef />
-            <RecipeBar />
+            <RecipeGallery />
             <NewsLetter />
         </div>
     );

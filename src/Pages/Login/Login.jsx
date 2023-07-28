@@ -4,10 +4,12 @@ import img from '/logo.png'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
+import { useState } from 'react';
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext)
+    const { signIn } = useContext(AuthContext);
+    const [messageError, setMessageError] = useState('');
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -36,8 +38,9 @@ const Login = () => {
             })
             .catch((error) => {
                 const errorCode = error.code;
-                const errorMessage = error.message;
-                console.log(errorCode, errorMessage)
+                // const errorMessage = error.message;
+                console.log(errorCode);
+                setMessageError(errorCode);
             });
     }
 
@@ -66,6 +69,9 @@ const Login = () => {
                                     <label className="label">
                                         <a href="#" className="label-text-alt link link-hover text-white mt-2">Forgot password?</a>
                                     </label>
+                                    <p className='text-red-600'>
+                                        {messageError}
+                                    </p>
                                 </div>
                                 <div className="form-control mt-6">
                                     <input className="btn btn-sm md:btn-md btn-outline hover:bg-white hover:text-black text-slate-200 btn-neutral" type="submit" value="Login" /> <br />
