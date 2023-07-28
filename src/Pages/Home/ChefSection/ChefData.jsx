@@ -22,7 +22,7 @@ const ChefData = ({ chef }) => {
                 title: 'Please login first',
                 icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#422006',
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Login Now'
             }).then((result) => {
