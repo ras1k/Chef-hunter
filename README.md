@@ -1,6 +1,6 @@
 # Chef Advsior Ltd.
 
-Live Link: (https://chef-hunter-66aa0.web.app/)[https://chef-hunter-66aa0.web.app/]
+Live Link: [https://chef-hunter-66aa0.web.app/](https://chef-hunter-66aa0.web.app/)
 
 ## Features:
 * Single Page Application
