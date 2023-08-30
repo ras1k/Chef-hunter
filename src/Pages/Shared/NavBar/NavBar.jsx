@@ -24,7 +24,7 @@ const NavBar = () => {
     </>
     return (
         <div className="">
-            <div className="navbar flex items-center bg-yellow-950 text-slate-200 p-3 rounded-b-lg top-0 mb-12 lg:mb-4 px-6">
+            <div className="navbar flex items-center bg-yellow-950 text-slate-200 p-3 rounded-b-lg top-0 mb-12 lg:mb-4">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -34,7 +34,7 @@ const NavBar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <Link to="/" ><img src={logo} className='w-1/6 rounded-lg' alt="" /></Link>
+                    <Link to="/" ><img src={logo} className='lg:w-1/6 w-1/2 rounded-lg' alt="" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal text-slate-200 px-1">

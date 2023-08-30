@@ -4,7 +4,7 @@ import { AiFillLike, AiOutlineArrowRight } from "react-icons/ai";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from 'sweetalert2/dist/sweetalert2.all.js';
-
+import Tilt from 'react-parallax-tilt';
 
 const ChefData = ({ chef }) => {
 
@@ -34,7 +34,7 @@ const ChefData = ({ chef }) => {
     }
 
     return (
-        <div className="card card-compact lg:w-96 sm:w-80  bg-base-100 shadow-xl mx-auto">
+        <Tilt className="card card-compact lg:w-96 sm:w-80  bg-base-100 shadow-xl mx-auto">
             <figure className="">
                 <img className='' src={chef_picture} alt="Chef" />
             </figure>
@@ -47,7 +47,7 @@ const ChefData = ({ chef }) => {
                     <button onClick={() => handleViewRecipe(id)} className="bg-yellow-950 text-[white] btn-outline btn-md flex items-center gap-4"><span>View Recipes</span> <span><AiOutlineArrowRight /></span></button>
                 </div>
             </div>
-        </div>
+        </Tilt>
     );
 };
 

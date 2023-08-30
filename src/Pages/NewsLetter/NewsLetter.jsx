@@ -1,6 +1,6 @@
 import { AiOutlineSend } from "react-icons/ai";
 import img from '/logo.png'
-
+import Tilt from 'react-parallax-tilt';
 const NewsLetter = () => {
     return (
         <div>
@@ -21,11 +21,11 @@ const NewsLetter = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <Tilt className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
 
                         <img src={img} alt="" className='w-4/5 rounded-lg lg:w-full' />
 
-                    </div>
+                    </Tilt>
                 </div>
             </div>
 
