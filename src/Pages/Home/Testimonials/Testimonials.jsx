@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-// import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
 import "swiper/css";
@@ -7,6 +6,7 @@ import "swiper/css/navigation";
 import { Rating, ThinStar } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { FaQuoteLeft } from 'react-icons/fa';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
@@ -24,13 +24,10 @@ const Testimonials = () => {
       }
     return (
         <div>
-            {/* <SectionTitle
+            <SectionTitle
                 subHeading={'What out client say'}
                 heading={'Testimonials'}
-            ></SectionTitle> */}
-            <div className='text-center'>
-                <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10'>What Our Clients Say</h2>
-            </div>
+            ></SectionTitle>
             <div className='my-20'>
                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
 
