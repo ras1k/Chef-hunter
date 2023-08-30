@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa";
 const Blog = () => {
     const ref = React.createRef();
     return (
-        <div className="">
+        <div className="max-w-screen-xl mx-auto">
             <div className='text-center'>
                 <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10 mb-10'>Blog Page</h2>
             </div>

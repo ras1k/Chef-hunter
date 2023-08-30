@@ -7,10 +7,14 @@ import RecipeGallery from "../RecipeGallery/RecipeGallery";
 const Home = () => {
     return (
         <div>
-            <Banner />
-            <Chef />
-            <RecipeGallery />
-            <NewsLetter />
+            <div className="w-full">
+                <Banner />
+            </div>
+            <div className="max-w-screen-xl mx-auto">
+                <Chef />
+                <RecipeGallery />
+                <NewsLetter />
+            </div>
         </div>
     );
 };
