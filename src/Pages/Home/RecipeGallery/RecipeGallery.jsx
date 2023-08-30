@@ -4,13 +4,16 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './SwiperStyles.css';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const RecipeGallery = () => {
     return (
-        <div className=''>
-            <div className='text-center'>
-                <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10'>Recipe Gallery</h2>
-            </div>
+        <div className='mt-10'>
+            <SectionTitle
+                subHeading={'Our Recipes'}
+                heading={'Gallery'}
+            >
+            </SectionTitle>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -26,12 +29,12 @@ const RecipeGallery = () => {
                 autoplay={{
                     delay: 1500,
                     disableOnInteraction: false,
-                  }}
+                }}
                 pagination={true}
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper"
             >
-                
+
                 <SwiperSlide>
                     <img src="https://i.ibb.co/SmvYqX9/sushi-set-table.jpg" />
                 </SwiperSlide>
