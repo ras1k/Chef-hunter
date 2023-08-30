@@ -13,14 +13,14 @@ const NewsLetter = () => {
             <div className="hero mb-20 mt-10 rounded-lg">
                 <div className="hero-content flex-col gap-10 lg:flex-row">
                     <div className="text-center w-1/2 lg:text-left">
-                        <h1 className="md:text-5xl font-bold">Subscribe To Our NewsLetter</h1>
+                        <h1 className="md:text-5xl text-3xl font-bold">Subscribe To Our NewsLetter</h1>
                         <p className="py-6">We will send you updates about our new chef.</p>
                         <div className="flex items-center justify-center lg:justify-normal">
                             <div className="form-control me-4 ">
-                                <input type="text" placeholder="email" className="input input-bordered lg:w-[300px]" />
+                                <input type="text" placeholder="email" className="input input-bordered lg:w-[300px] focus:outline-none" />
                             </div>
                             <div className="form-control">
-                                <button className="btn btn-sm md:btn-md btn-outline bg-yellow-950 text-white">Subscribe <AiOutlineSend /></button>
+                                <button className="btn flex items-center flex-col btn-sm lg:btn-md btn-outline bg-yellow-950 text-white">Subscribe <AiOutlineSend /></button>
                             </div>
                         </div>
                     </div>
