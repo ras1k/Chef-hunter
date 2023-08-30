@@ -1,12 +1,15 @@
 import { AiOutlineSend } from "react-icons/ai";
 import img from '/logo.png'
 import Tilt from 'react-parallax-tilt';
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 const NewsLetter = () => {
     return (
         <div>
-            <div className='text-center'>
-                <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10'>News Letter</h2>
-            </div>
+            <SectionTitle
+                subHeading={'Subscribe To Our'}
+                heading={'Newsletter'}
+            >
+            </SectionTitle>
             <div className="hero mb-20 mt-10 rounded-lg">
                 <div className="hero-content flex-col gap-10 lg:flex-row">
                     <div className="text-center w-1/2 lg:text-left">
