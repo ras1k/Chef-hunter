@@ -16,7 +16,7 @@ const FeaturedBlogs = () => {
             >
             </SectionTitle>
             <div className="section lg:flex gap-5">
-                <div className="card w-96 bg-base-100 card-area  mt-5 shadow-xl">
+                <div className="card w-full bg-base-100 card-area  mt-5 shadow-xl">
                     <figure><img src={img1} alt="Food" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Healthy Food</h2>
@@ -27,7 +27,7 @@ const FeaturedBlogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 card-area mt-5 shadow-xl">
+                <div className="card w-full bg-base-100 card-area mt-5 shadow-xl">
                     <figure><img src={img2} alt="Food" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Breakfast should be healthy</h2>
@@ -38,7 +38,7 @@ const FeaturedBlogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 card-area  mt-5 shadow-xl">
+                <div className="card w-full bg-base-100 card-area  mt-5 shadow-xl">
                     <figure><img src={img3} alt="Food" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Fruits are natural medicine</h2>
@@ -50,7 +50,7 @@ const FeaturedBlogs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 card-area mt-5 shadow-xl">
+                <div className="card w-full bg-base-100 card-area mt-5 shadow-xl">
                     <figure><img src={img4} alt="Food" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Steak Dinner for you</h2>

@@ -6,6 +6,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import Featured from "../Featured/Featured";
 import CallUs from "../CallUs/CallUs";
 import FeaturedBlogs from "../FeaturedBlogs/Featured";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
                 <Chef />
                 <RecipeGallery />
                 <Featured />
+                <VideoPlayer />
                 <Testimonials />
                 <CallUs />
                 <FeaturedBlogs />
