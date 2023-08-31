@@ -1,20 +1,26 @@
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import Chef from "../Home/ChefSection/CHef";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import logo from '/logo.png';
+import Tilt from 'react-parallax-tilt';
 
 const About = () => {
     return (
         <div className="p-4 max-w-screen-xl mx-auto">
+            <SectionTitle
+                subHeading={"..."}
+                heading={'About Us'}
+            />
             <div className="bg-gray-100 min-h-screen rounded-lg">
                 <div className="py-20">
                     <div className="container mx-auto px-4">
-                        <h1 className="text-4xl font-bold text-center mb-8">About Chef Advisor</h1>
+                        {/* <h1 className="text-4xl font-bold text-center mb-8">About Chef Advisor</h1> */}
                         <p className="text-center text-gray-600">
-                            Chef Hunter is the premier platform for uncovering exceptional chefs globally. Our seamless platform connects talented culinary artists with top restaurants and food establishments, forging a path towards unparalleled excellence. Discover a world of culinary brilliance and elevate your dining experience with our carefully curated selection of top-tier chefs.
+                            <span className="text-2xl font-bold">Chef Advisor</span> is the premier platform for uncovering exceptional chefs globally. Our seamless platform connects talented culinary artists with top restaurants and food establishments, forging a path towards unparalleled excellence. Discover a world of culinary brilliance and elevate your dining experience with our carefully curated selection of top-tier chefs.
                         </p>
-                        <div className="mt-12 flex justify-center">
+                        <Tilt className="mt-12 flex justify-center">
                             <img src={logo} alt="" className="w-1/2 rounded-lg" />
-                        </div>
+                        </Tilt>
                         <div className="mt-12 p-4">
                             <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
                             <p className="text-gray-600">

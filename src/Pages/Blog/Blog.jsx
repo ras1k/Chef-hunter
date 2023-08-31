@@ -1,14 +1,16 @@
 import React from "react";
 import Pdf from "react-to-pdf";
 import { FaDownload } from "react-icons/fa";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const Blog = () => {
     const ref = React.createRef();
     return (
         <div className="max-w-screen-xl mx-auto">
-            <div className='text-center'>
-                <h2 className='lg:text-5xl bg-yellow-950 w-2/5 pt-2 pb-2 rounded-lg text-white font-bold mx-auto mt-10 mb-10'>Blog Page</h2>
-            </div>
+            <SectionTitle
+                subHeading={"Our"}
+                heading={'Blog'}
+            />
             <div className="text-center mb-4">
                 <Pdf targetRef={ref} filename="blogs.pdf">
                     {({ toPdf }) => <button onClick={toPdf}><span className="flex gap-2 items-center">Generate Pdf <span><FaDownload /></span></span></button>}
