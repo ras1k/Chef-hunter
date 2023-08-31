@@ -22,3 +22,5 @@
 * React-to-pdf
 * Sweetalert2
 * Swiper
+* React-Player
+* React-parallax-tilt
