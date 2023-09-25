@@ -21,6 +21,6 @@
 * React-router-dom
 * React-to-pdf
 * Sweetalert2
-* Swiper
+* SwiperJs
 * React-Player
 * React-parallax-tilt
